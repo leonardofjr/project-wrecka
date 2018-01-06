@@ -39,6 +39,21 @@ footer, header, hgroup, menu, nav, section {
 
 /******* CH02 - Typography *******/
 /******* CH03 - Page Structure *******/
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr;
+  grid-gap: 50px;
+}
+
+.main-content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 50px;
+  grid-template-areas: ""
+}
+
+
 /******* CH04 - Header & Navigation *******/
 /******* CH05 - Content & Media *******/
 /******* CH06 - Footer *******/
