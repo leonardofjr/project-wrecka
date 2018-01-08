@@ -33,25 +33,96 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
 
+a {
+  color: white; }
+
+a:hover {
+  text-decoration: none;
+  color: red; }
+
 /******* CH02 - Typography *******/
+body {
+  font-family: 'Roboto', serif, 'Open Sans'; }
+
+p {
+  letter-spacing: 1px;
+  font-weight: 300;
+  word-spacing: 1.3px;
+  line-height: 24px; }
+
+h1 {
+  font-size: 2.50em; }
+
+h2 {
+  font-size: 2em; }
+
 /******* CH03 - Page Structure *******/
 body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 3fr;
-  grid-gap: 50px; }
+  grid-gap: 50px;
+  grid-template-areas: "header" "main" "footer"; }
 
-.main-content-wrapper {
+header {
+  grid-area: header; }
+
+main {
+  grid-area: main; }
+
+footer {
+  grid-area: footer; }
+
+.three-boxes {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-gap: 50px;
-  grid-template-areas: ""; }
+  grid-template-areas: "box-1 box-2 box-3" "box-4 box-5 box-6"; }
 
 /******* CH04 - Header & Navigation *******/
 /******* CH05 - Content & Media *******/
 /******* CH06 - Footer *******/
 footer {
-  background: #000;
+  background: #333;
   color: #fff; }
 
+footer div:nth-child(1) {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr; }
+
+footer div:nth-child(1) div:nth-child(1) {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "Phone" "Location"; }
+
+footer div:nth-child(1) div:nth-child(1) div:nth-child(1) {
+  grid-area: Phone; }
+
+footer div:nth-child(1) div:nth-child(1) div:nth-child(2) {
+  grid-area: Location; }
+
+.site-info {
+  background: #000;
+  color: #888; }
+
 /******* CH07 - Miscellaneous *******/
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  grid-template-areas: "Label-1 Label-2" "Message Message" "Button Button"; }
+
+form input:nth-child(1) {
+  grid-area: Label-1; }
+
+form input:nth-child(2) {
+  grid-area: Label-2; }
+
+form textarea {
+  grid-area: 2 / 1 / span 1 / span 2; }
+
+form button {
+  grid-area: 3 / 1 / span 1 / span 2; }

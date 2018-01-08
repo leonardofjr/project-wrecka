@@ -4,6 +4,24 @@ include ../mixin/functions.jade
 -    return newDate.getFullYear();
 - }
 
-div.container
-    div.site-info.text-center 
-        small Copyright &copy; #{getDate()}
+div.container.py-5
+    div.text-center
+        div
+            a(href="tel://012 345 6789")
+                i.fa.fa-5x.fa-phone
+                p Hire Me
+        div
+            i.fa.fa-5x.fa-map-marker
+            p Address
+    div
+        h2.text-center.px-3.py-2 Get in Touch
+        p.text-center.px-3.py-2 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem quibusdam ipsa libero voluptates pariatur quae repellendus vitae, eaque voluptatum doloribus cum magnam modi dolores excepturi minus iure enim soluta molestias.
+        form.mr-auto.ml-auto.py-4
+            input.form-control(type="text" name="contact-form-name" placeholder="Name")
+            input.form-control(type="text" name="contact-form-email" placeholder="Email Address")
+            textarea.form-control(type="text" name="contact-form-message" placeholder="Leave Your Message")
+            button(type="submit" class="btn btn-primary btn-block") Send It Now
+            
+        
+div.site-info.text-center.py-4
+    small Copyright &copy; #{getDate()}

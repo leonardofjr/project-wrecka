@@ -10,8 +10,10 @@ html
     script(src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous")
+    link(link href="https://fonts.googleapis.com/css?family=Lato:100,300,400|Open+Sans:300,400|Oswald:200,300,400|Roboto:100,300,400|Vollkorn" rel="stylesheet")
     script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js")
     link(href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous")
+    link(rel='stylesheet' href='/stylesheets/font-awesome/css/font-awesome.css')
     link(rel='stylesheet' href='/stylesheets/style.css')
     link(rel='stylesheet' href='/stylesheets/lg-screens.css')
     link(rel='stylesheet' href='/stylesheets/md-screens.css')
@@ -21,9 +23,10 @@ html
     header
       include inc/header-content.jade
       include inc/navigation.html
+      include inc/main-image.jade
     main.container
       section.content
         block content
-    footer 
+    footer
       include inc/footer-content.jade
     script(src="js/functions.js")
