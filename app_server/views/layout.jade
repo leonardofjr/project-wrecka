@@ -20,7 +20,9 @@ html
     link(rel='stylesheet' href='/stylesheets/sm-screens.css')
     link(rel='stylesheet' href='/stylesheets/xs-screens.css')
     
+
     header
+      div#top
       include inc/header-content.jade
       include inc/main-image.jade
     main.container
@@ -28,6 +30,10 @@ html
         block content
     footer
       include inc/footer-content.jade
-    script(src="js/wow/wow.min.js")
+    script(src="js/gsap/TweenMax.min.js")
+    script(src="js/gsap/plugins/scrollToPlugin.min.js")
+    script(src="js/Scroll-Magic/ScrollMagic.min.js")
+    script(src="js/Scroll-Magic/plugins/animation.gsap.js")
+    script(src="js/Scroll-Magic/plugins/debug.addIndicators.min.js")
     script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js")
     script(src="js/functions.js")

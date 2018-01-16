@@ -8,6 +8,8 @@
   * CH07 - Miscellaneous
 **/
 
+@import './variables.scss';
+@import './mixins.scss';
 /******* CH01 - Resets *******/
 
 html, body, div, span, applet, object, iframe,
@@ -42,19 +44,17 @@ a {
 
 a:hover {
   text-decoration: none;
-  color: red;
+  color: white;
 }
 
 /******* CH02 - Typography *******/
 body {
-font-family: 'Roboto', serif, 'Open Sans';
+font-family: $font-stack;
+color: white;
 }
 
 p {
-  letter-spacing: 1px;
-  font-weight: 300;
-  word-spacing: 1.3px;
-  line-height: 24px;
+  @include font-settings;
 }
 
 h1 {
@@ -62,6 +62,14 @@ h1 {
 }
 h2 {
   font-size: 2em;
+}
+
+h3 {
+  font-size: 1.8em;
+}
+
+h4 {
+  font-size: 1.6em;
 }
 
 /******* CH03 - Page Structure *******/
@@ -103,6 +111,16 @@ footer {
 }
 
 /******* CH04 - Header & Navigation *******/
+nav {
+
+   ul {
+    @include nav-bar-gradient;
+
+    list-style: none;      
+  }
+   
+
+}
 /******* CH05 - Content & Media *******/
 /******* CH06 - Footer *******/
 footer {
@@ -157,7 +175,13 @@ form textarea  {
   grid-area: 2 / 1 / span 1 / span 2;
 }
 
-form button {
-  grid-area: 3 / 1 / span 1 / span 2;
-}
+form {
+    button {
+    @include btn-border-line(white, white);
+    grid-area: 3 / 1 / span 1 / span 2;
+  }
+    button:hover, button:focus {
+    @include btn-border-line-hover($primary-color);
+  }
+}  
 
