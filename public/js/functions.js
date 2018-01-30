@@ -34,7 +34,6 @@ $(document).ready(function () {
 
     // build scene
     var anchorLinkScrollingScene = new ScrollMagic.Scene({ triggerElement: "nav li:nth-child(2)", duration: 20, triggerHook: "onLeave" })
-        .addIndicators() // add indicators (requires plugin)
         .addTo(anchorLinkScrollingController);
 
     // change behaviour of controller to animate scroll instead of jump

@@ -10,6 +10,7 @@
 
 @import './variables.scss';
 @import './mixins.scss';
+
 /******* CH01 - Resets *******/
 
 html, body, div, span, applet, object, iframe,
@@ -50,32 +51,37 @@ a:hover {
 /******* CH02 - Typography *******/
 body {
 font-family: $font-stack;
-color: white;
+color: black;
 }
 
 p {
   @include font-settings;
+  padding: 1rem!important
 }
 
 h1 {
   font-size: 2.50em;
+  padding: 1rem!important;
 }
 h2 {
   font-size: 2em;
+  padding: .4rem;
 }
 
 h3 {
   font-size: 1.8em;
+  padding: .2rem!important;
 }
 
 h4 {
   font-size: 1.6em;
+  padding: 1rem 0!important
 }
 
 /******* CH03 - Page Structure *******/
 body {
   display: grid;
-  background-color: black;
+  background-color: white;
   grid-template-columns: 1fr;
   grid-template-rows: 3fr;
   grid-gap: 50px;
@@ -99,16 +105,6 @@ footer {
 
 
 
-
-.three-boxes {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-gap: 50px;
-  grid-template-areas: 
-            "box-1 box-2 box-3"
-            "box-4 box-5 box-6"
-}
 
 /******* CH04 - Header & Navigation *******/
 nav {
@@ -185,3 +181,7 @@ form {
   }
 }  
 
+@import './lg-screens.scss';
+@import './md-screens.scss';
+@import './sm-screens.scss';
+@import './xs-screens.scss';
