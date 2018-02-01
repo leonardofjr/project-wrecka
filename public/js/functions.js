@@ -3,7 +3,7 @@ $(document).ready(function () {
     var controller = new ScrollMagic.Controller();
     // create a scene
     var scene = new ScrollMagic.Scene()
-        .triggerElement('#boxes')
+        .triggerElement('.about-container > p')
         .addIndicators({
             name: 'bounce in',
             colorTrigger: 'white',
@@ -13,10 +13,6 @@ $(document).ready(function () {
         .triggerHook('Center')
         .duration('25%')
         .on("start", function(event) {
-            $('h2').removeClass('invisible');
-            $('h2').addClass('animated bounceInLeft');
-        })
-        .on("end", function (event) {
             $('.box-1').removeClass('invisible');
             $('.box-1').addClass('animated bounceInLeft');
             $('.box-2').removeClass('invisible');
@@ -24,6 +20,7 @@ $(document).ready(function () {
             $('.box-3').removeClass('invisible');
             $('.box-3').addClass('animated bounceInRight');
         })
+
         .addTo(controller)
 
 

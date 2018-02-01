@@ -10,29 +10,6 @@
 /******* CH01 - Resets *******/
 /******* CH02 - Typography *******/
 /******* CH03 - Page Structure *******/
-@media (max-width: 575px) {
-  .featured-content {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-gap: 50px; }
-  .about-content {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-gap: 50px; }
-  .services-content {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-gap: 50px; }
-  .services-content > div {
-    display: grid;
-    justify-items: center;
-    grid-template-columns: 1fr 2fr; }
-  .services-content > div img {
-    width: 50px; } }
-
 /******* CH04 - Header & Navigation *******/
 /******* CH05 - Content & Media *******/
 /******* CH06 - Footer *******/

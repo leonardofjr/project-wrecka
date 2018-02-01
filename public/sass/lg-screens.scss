@@ -15,19 +15,19 @@
 
 @media (min-width: 992px) {
   .featured-content{
-    @include generate3Column();
+
   }
   .about-content{
-    @include generate3Column();
+
   }
   .services-content {
-    @include generate3Column();
+
   }
   .services-content > div {
-    @include generate2Column();
+
   }
   .services-content > div img {
-    width:50px;
+
   }
 }
 

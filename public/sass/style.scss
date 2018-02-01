@@ -79,27 +79,34 @@ h4 {
 }
 
 /******* CH03 - Page Structure *******/
-body {
-  display: grid;
-  background-color: white;
-  grid-template-columns: 1fr;
-  grid-template-rows: 3fr;
-  grid-gap: 50px;
-  grid-template-areas: "header"
-                       "main"
-                       "footer"
-}
+.special-offers-container {
+   img {
+     width: 100%;
+   }
 
+  .img-container {
+    position: relative;
+  }
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+body {
+
+}
 header {
-  grid-area: header;
+
 }
 
 main {
-  grid-area: main;
+
 }
 
 footer {
-  grid-area: footer;
+
 }
 
 
@@ -124,24 +131,18 @@ footer {
   color: #fff;
 }
 footer div:nth-child(1) {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr;
+
 }
 
 footer div:nth-child(1) div:nth-child(1) {
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: 
-                    "Phone"
-                    "Location"
+
 }
 
 footer div:nth-child(1) div:nth-child(1) div:nth-child(1)  {
-  grid-area: Phone;
+
 }
 footer div:nth-child(1) div:nth-child(1) div:nth-child(2)  {
-  grid-area: Location;
+
 }
 .site-info {
   background: #000;
@@ -150,36 +151,92 @@ footer div:nth-child(1) div:nth-child(1) div:nth-child(2)  {
 
 
 /******* CH07 - Miscellaneous *******/
+.services-content img {
+  width: 50px;
+}
+.services-content ul {
+  line-height: 1.7em;
+}
+
+.services-content img {
+    animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    -moz-animation: bounce 2s infinite;
+    -o-animation: bounce 2s infinite;
+}
+
+ 
+@-webkit-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);} 
+    40% {-webkit-transform: translateY(-30px);}
+    60% {-webkit-transform: translateY(-15px);}
+}
+ 
+@-moz-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+    40% {-moz-transform: translateY(-30px);}
+    60% {-moz-transform: translateY(-15px);}
+}
+ 
+@-o-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+    40% {-o-transform: translateY(-30px);}
+    60% {-o-transform: translateY(-15px);}
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-30px);}
+    60% {transform: translateY(-15px);}
+}
+
+.main-btn {
+    box-shadow: rgb(252, 226, 193) 0px 1px 0px 0px inset;
+    background: linear-gradient(rgb(255, 196, 119) 5%, rgb(250, 215, 37) 100%) rgb(255, 196, 119);
+    border-radius: 6px;
+    border: 1px solid rgb(238, 180, 79);
+    display: inline-block;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 9px 24px;
+    text-decoration: none;
+    text-shadow: rgb(204, 159, 82) 0px 1px 0px;
+    width: 70%;
+}
 form {
-  display: grid;
-  grid-template-columns: 1fr 1fr ;
-  grid-template-rows:  1fr 1fr 1fr;
-  grid-gap: 20px;
-  grid-template-areas: 
-                  "Label-1 Label-2"
-                  "Message Message"
-                  "Button Button"
+
 }
 
 form input:nth-child(1) {
-  grid-area: Label-1 ;
+
 }
 form input:nth-child(2) {
-  grid-area: Label-2;
+
 }
 form textarea  {
-  grid-area: 2 / 1 / span 1 / span 2;
+
 }
 
 form {
     button {
     @include btn-border-line(white, white);
-    grid-area: 3 / 1 / span 1 / span 2;
   }
     button:hover, button:focus {
     @include btn-border-line-hover($primary-color);
   }
-}  
+} 
+.special-offers-container {
+
+  .coupon-box-1 {
+    background-image: url('../assets/png/image-1.gif')
+  } 
+
+  .coupon-box-2 {
+    background-image: url('../assets/png/image-1.gif')
+  } 
+}
 
 @import './lg-screens.scss';
 @import './md-screens.scss';

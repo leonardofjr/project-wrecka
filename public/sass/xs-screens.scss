@@ -14,21 +14,7 @@
 /******* CH03 - Page Structure *******/
 
 @media (max-width: 575px) {
-    .featured-content{
-    @include generate1Column();
-  }
-  .about-content{
-    @include generate1Column();
-  }
-  .services-content {
-    @include generate1Column();
-  }
-  .services-content > div {
-    @include generate2Column();
-  }
-  .services-content > div img {
-    width:50px;
-  }
+
 }
 /******* CH04 - Header & Navigation *******/
 /******* CH05 - Content & Media *******/

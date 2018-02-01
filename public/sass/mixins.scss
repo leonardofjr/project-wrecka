@@ -27,22 +27,3 @@
     border-color: $primary-color;
     color: black;
 }
-@mixin generate3Column() {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-gap: 50px;
-}
-
-@mixin generate2Column() {
-    display: grid;
-    justify-items: center;
-    grid-template-columns: 1fr 2fr;
-}
-
-@mixin generate1Column() {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-gap: 50px;
-}
