@@ -77,7 +77,15 @@ h4 {
   font-size: 1.6em;
   padding: 1rem 0!important
 }
-
+header {
+  .main-heading {
+    font-weight: 100;
+    font-size: 3em;
+  }
+  .main-heading span {
+    font-weight: 900;
+  }
+}
 /******* CH03 - Page Structure *******/
 .special-offers-container {
    img {
@@ -104,7 +112,9 @@ header {
 main {
 
 }
-
+.map iframe {
+  width: 100%
+}
 footer {
 
 }
@@ -151,6 +161,25 @@ footer div:nth-child(1) div:nth-child(1) div:nth-child(2)  {
 
 
 /******* CH07 - Miscellaneous *******/
+.btn {
+  border: none;
+  color: white;
+  overflow: hidden;
+  margin: 1rem;
+  padding: 0;
+  text-transform: uppercase;
+  width: 200px;
+  height: 40px;
+
+    
+  &.button-3 {
+    background-color: $btn-color-3;
+  }
+
+  &.button-4 {
+    background-color: $btn-color-4;
+  }
+}
 .services-content img {
   width: 50px;
 }
@@ -230,11 +259,13 @@ form {
 .special-offers-container {
 
   .coupon-box-1 {
-    background-image: url('../assets/png/image-1.gif')
+    background-color: #888;
+    color: white;
   } 
 
   .coupon-box-2 {
-    background-image: url('../assets/png/image-1.gif')
+    background-color: #aaa;
+    color: white;
   } 
 }
 

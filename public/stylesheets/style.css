@@ -68,6 +68,13 @@ h4 {
   font-size: 1.6em;
   padding: 1rem 0 !important; }
 
+header .main-heading {
+  font-weight: 100;
+  font-size: 3em; }
+
+header .main-heading span {
+  font-weight: 900; }
+
 /******* CH03 - Page Structure *******/
 .special-offers-container img {
   width: 100%; }
@@ -80,6 +87,9 @@ h4 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); }
+
+.map iframe {
+  width: 100%; }
 
 /******* CH04 - Header & Navigation *******/
 nav ul {
@@ -107,6 +117,20 @@ footer {
   color: #888; }
 
 /******* CH07 - Miscellaneous *******/
+.btn {
+  border: none;
+  color: white;
+  overflow: hidden;
+  margin: 1rem;
+  padding: 0;
+  text-transform: uppercase;
+  width: 200px;
+  height: 40px; }
+  .btn.button-3 {
+    background-color: #ffcd06; }
+  .btn.button-4 {
+    background-color: #e94043; }
+
 .services-content img {
   width: 50px; }
 
@@ -182,10 +206,12 @@ form button:hover, form button:focus {
   color: black; }
 
 .special-offers-container .coupon-box-1 {
-  background-image: url("../assets/png/image-1.gif"); }
+  background-color: #888;
+  color: white; }
 
 .special-offers-container .coupon-box-2 {
-  background-image: url("../assets/png/image-1.gif"); }
+  background-color: #aaa;
+  color: white; }
 
 /**
   * CH01 - Resets
