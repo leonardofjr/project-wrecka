@@ -1,4 +1,4 @@
-nav
+nav.d-none.d-sm-block
     ul.navbar.fixed-top
       div.container
         li  
@@ -7,6 +7,26 @@ nav
         li.nav-item
           a.nav-link(href='#top') Home
         |       
+        li.nav-item
+          a.nav-link(href='#about') About
+        |      
+        li.nav-item
+          a.nav-link(href='#services') Services
+        |       
+        li.nav-item
+          a.nav-link(href='#discounts') Discounts
+        |       
+        li.nav-item
+          a.nav-link(href='#bottom') Contact
+
+nav.d-block.d-sm-none.navbar.navbar-dark.bg-dark.fixed-top.p-3.mobile-navigation
+  button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarToggleExternalContent', aria-controls='navbarToggleExternalContent', aria-expanded='false', aria-label='Toggle navigation')
+    span.navbar-toggler-icon
+  span.pl-3
+    include ./logo.html
+  .pos-f-t
+    #navbarToggleExternalContent.collapse.bg-dark.p-4
+      ul
         li.nav-item
           a.nav-link(href='#about') About
         |      

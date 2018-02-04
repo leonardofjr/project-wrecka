@@ -1,37 +1,9 @@
 $(document).ready(function () {
-    // init controller
-    var controller = new ScrollMagic.Controller();
-    // create a scene
-    var scene = new ScrollMagic.Scene()
-        .triggerElement('.about-container > p')
-        .addIndicators({
-            name: 'bounce in',
-            colorTrigger: 'white',
-            colorStart: '#75C695',
-        })
-        .reverse(false)
-        .triggerHook('Center')
-        .duration('25%')
-        .on("start", function(event) {
-            $('.box-1').removeClass('invisible');
-            $('.box-1').addClass('animated bounceInLeft');
-            $('.box-2').removeClass('invisible');
-            $('.box-2').addClass('animated bounceInUp');
-            $('.box-3').removeClass('invisible');
-            $('.box-3').addClass('animated bounceInRight');
-        })
-
-        .addTo(controller)
 
 
+/**** Srolling Functionality Services ****/
     // init controller
     var anchorLinkScrollingController = new ScrollMagic.Controller();
-
-    // build tween
-
-    // build scene
-    var anchorLinkScrollingScene = new ScrollMagic.Scene({ triggerElement: "nav li:nth-child(2)", duration: 20, triggerHook: "onLeave" })
-        .addTo(anchorLinkScrollingController);
 
     // change behaviour of controller to animate scroll instead of jump
     anchorLinkScrollingController.scrollTo(function (newpos, offset) {
@@ -54,5 +26,33 @@ $(document).ready(function () {
         }
     });
 
+    var servicesController = new ScrollMagic.Controller();
+    $('.fade-in').each(function () {
+        var tween = TweenMax.from(this , 0.5, {autoAlpha: 0, scale: 0.5, y: '-=130', ease: Linear.easeNone});
 
+        var scene = new ScrollMagic.Scene({
+            triggerElement: this
+        })
+        .setTween(tween) // trigger a TweenMax tween
+        .addTo(servicesController)
+    })
+
+
+/* Collapse Mobile Navigation Box On Click */
+
+    $('#navbarToggleExternalContent .nav-item').each(function() {
+        $(this).click(function() {
+            $('nav:nth-child(2) button').attr('aria-expanded', 'false');
+            $('nav:nth-child(2) button').removeClass('navbar-toggler');
+            $('nav:nth-child(2) button').addClass('navbar-toggler collapsed');
+            $('#navbarToggleExternalContent').addClass('collapsing');
+            $('#navbarToggleExternalContent').removeClass('show');
+        })
+    })
 });
+
+//** Helper Functions **/
+function revealElement(target, animation) {
+    $(target).removeClass('invisible');
+    $(target).addClass('animated' + animation);
+}

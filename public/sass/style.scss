@@ -87,6 +87,10 @@ header {
   }
 }
 /******* CH03 - Page Structure *******/
+body, html {
+  overflow-y: scroll;
+overflow-x: hidden;
+}
 .special-offers-container {
    img {
      width: 100%;
@@ -124,12 +128,18 @@ footer {
 
 
 /******* CH04 - Header & Navigation *******/
+.mobile-navigation {
+  ul {
+background: none;
+  }
+  
+}
 nav {
 
    ul {
     @include nav-bar-gradient;
 
-    list-style: none;      
+    list-style: none;    
   }
    
 
@@ -161,6 +171,12 @@ footer div:nth-child(1) div:nth-child(1) div:nth-child(2)  {
 
 
 /******* CH07 - Miscellaneous *******/
+
+.featured-content {
+  img {
+    width: 100%;
+  }
+}
 .btn {
   border: none;
   color: white;

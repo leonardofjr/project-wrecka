@@ -1,17 +1,17 @@
 - var checkMark = './assets/png/check-mark.png';
 section.services-container.py-5
   a#services
-  div
+  div.fade-in
     h2.text-center Our Auto Services: Brakes, A/C, Fuel Injection, Alignment & More
     p Triple C Automotive was established on January 2017 in Markham by Carlos Felipa who is a Master Mechanic. Carlos Felipa has been in the car repair industry since he was a child and has over a decade of experience. He has worked on every possible car repair job. Carlos has worked in all major car shops like Canadian Tire, Active Green Ross and dealerships in all over the Great Toronto Area. He has replaced engines, rebuilt engines, replaced transmissions of all makes and models, just name the job he has done it.
-    div.services-content.row
-      div.col-lg-4
-        div.row.py-5
-          div.col-lg-2
-            img.text-center.img-responsive(src=checkMark).bounce
-          div.col-lg-10
-            h4 Preventative Maintenance
-            ul
+  div.services-content.row.py-5
+    div.col-xs-12.col-sm-4.col-md-4.col-lg-4.p-5.fade-in
+      div.row
+          div.col-3.col-sm-3.col-md-3.col-lg-3
+            img.text-center.img-responsive(src=checkMark)
+          div.col-9.col-sm-9.col-md-9.col-lg-9
+            p Preventative Maintenance
+            ul.pl-3
               li Lube Oil and Filter Service
               li Transmission Flush
               li Coolant Flush
@@ -21,50 +21,51 @@ section.services-container.py-5
               li Differential & Transfer Case Service
               li Spring & Fall Inspections
               li Dealer Recommended
-      div.col-lg-4
-        div.row.py-5
-          div.col-lg-2
-              img(src=checkMark)
-          div.col-lg-10
-            h4 Drivability & Engine Lights
-            ul
+    div.col-xs-12.col-sm-4.col-md-4.col-lg-4.p-5.fade-in
+      div.row
+          div.col-3.col-sm-3.col-md-3.col-lg-3
+            img.text-center.img-responsive(src=checkMark)
+          div.col-9.col-sm-9.col-md-9.col-lg-9
+            p Drivability & Engine Lights
+            ul.pl-3
               li Diagnostic analysis of drivability issues
               li Diagnose check engine & other warning lights
               li Diagnose and repair electrical issues
               li ECU and BCM programming and updating (most vehicles)
-      div.col-lg-4
-        div.row.py-5
-          div.col-lg-2
-            img(src=checkMark)
-          div.col-lg-10
-            h4 Engine & Transmission
-            ul
+    div.col-xs-12.col-sm-4.col-md-4.col-lg-4.p-5.fade-in
+      div.row
+          div.col-3.col-sm-3.col-md-3.col-lg-3
+            img.text-center.img-responsive(src=checkMark)
+          div.col-9.col-sm-9.col-md-9.col-lg-9
+            p Engine & Transmission
+            ul.pl-3
               li Tune ups and intake service
               li Cylinder Head replacement and machining
               li Intake gasket replacement
               li Cylinder head gasket replacement
               li Engine reseals and replacement
               li Transmission repair and replacement
-      div.col-lg-4
-        div.row.py-5
-          div.col-lg-2
-            img(src=checkMark)
-          div.col-lg-10
-            h4 Brakes
-            ul
-              li Brake Suspension
-              li Replacement and service of disc brake systems
-              li Machining of drums and discs
-              li Replacement of calipers, wheel cylinders and flex hoses
-              li Brake line replacements and repairs
-              li ABS diagnostics, service and repairs
-      div.col-lg-4
-        div.row.py-5
-          div.col-lg-2
-            img(src=checkMark)
-          div.col-lg-10
-            h4 Suspension & Steering
-            ul
+  div.services-content.row.py-5
+    div.col-xs-12.col-sm-4.col-md-4.col-lg-4.p-5.fade-in
+      div.row
+          div.col-3.col-sm-3.col-md-3.col-lg-3
+            img.text-center.img-responsive(src=checkMark)
+          div.col-9.col-sm-9.col-md-9.col-lg-9
+            p Brakes
+              ul.pl-3
+                li Brake Suspension
+                li Replacement and service of disc brake systems
+                li Machining of drums and discs
+                li Replacement of calipers, wheel cylinders and flex hoses
+                li Brake line replacements and repairs
+                li ABS diagnostics, service and repairs
+    div.col-xs-12.col-sm-4.col-md-4.col-lg-4.p-5.fade-in
+      div.row
+          div.col-3.col-sm-3.col-md-3.col-lg-3
+            img.text-center.img-responsive(src=checkMark)
+          div.col-9.col-sm-9.col-md-9.col-lg-9
+            p Suspension & Steering
+            ul.pl-3
               li Complete suspension system inspections
               li Computerized Alignment
               li Replacement of Shocks and Struts
@@ -73,13 +74,13 @@ section.services-container.py-5
               li Service and replacement of Wheel bearings
               li Power steering racks and hydraulic system service and repairs
               li Stabilizer link kits, bushings and stabilizer bars
-      div.col-lg-4
-        div.row.py-5
-          div.col-lg-2
-            img(src=checkMark)
-          div.col-lg-10
-            h4 A/C, Cooling & Heating
-            ul
+    div.col-xs-12.col-sm-4.col-md-4.col-lg-4.p-5.fade-in
+      div.row
+          div.col-3.col-sm-3.col-md-3.col-lg-3
+            img.text-center.img-responsive(src=checkMark)
+          div.col-9.col-sm-9.col-md-9.col-lg-9
+            p A/C, Cooling & Heating
+            ul.pl-3
               li A/C system charge and leak test
               li Replacement of all A/C components
               li Radiators and Condensers
@@ -87,32 +88,33 @@ section.services-container.py-5
               li Replacement and inspection of belts and hoses
               li Diagnostic and repairs to electronic components
               li Flush or replacement of heater cores
-      div.col-lg-4
-        div.row.py-5
-          div.col-lg-2
-            img(src=checkMark)
-          div.col-lg-10
-            h4 Emissions Control
-            ul
-              li Emissions testing
-              li Emission failure Diagnostic and repair
-      div.col-lg-4
-        div.row.py-5
-          div.col-lg-2
-            img(src=checkMark)
-          div.col-lg-10
-            h4 Fuel System
-            ul
-              li Fuel line repair and replacement
-              li Fuel pump
-              li Injector flush and replacement
-      div.col-lg-4
-        div.row.py-5
-          div.col-lg-2
-            img(src=checkMark)
-          div.col-lg-10
-            h4 Starting & Charging
-            ul
-              li AVR Tests with printouts
-              li Battery replacements
-              li Alternators & Starters
+  div.services-content.row.py-5
+      div.col-xs-12.col-sm-4.col-md-4.col-lg-4.p-5.fade-in
+        div.row
+            div.col-3.col-sm-3.col-md-3.col-lg-3
+              img.text-center.img-responsive(src=checkMark)
+            div.col-9.col-sm-9.col-md-9.col-lg-9
+              p Emissions Control
+              ul.pl-3
+                li Emissions testing
+                li Emission failure Diagnostic and repair
+      div.col-xs-12.col-sm-4.col-md-4.col-lg-4.p-5.fade-in
+        div.row
+            div.col-3.col-sm-3.col-md-3.col-lg-3
+              img.text-center.img-responsive(src=checkMark)
+            div.col-9.col-sm-9.col-md-9.col-lg-9
+              p Fuel System
+              ul.pl-3
+                li Fuel line repair and replacement
+                li Fuel pump
+                li Injector flush and replacement
+      div.col-xs-12.col-sm-4.col-md-4.col-lg-4.p-5.fade-in
+        div.row
+            div.col-3.col-sm-3.col-md-3.col-lg-3
+              img.text-center.img-responsive(src=checkMark)
+            div.col-9.col-sm-9.col-md-9.col-lg-9
+              p Starting & Charging
+              ul.pl-3
+                li AVR Tests with printouts
+                li Battery replacements
+                li Alternators & Starters

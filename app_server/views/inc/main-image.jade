@@ -1,7 +1,23 @@
 div
-    div(style="position: absolute; top: 50%; left: 50%; color: #fff; transform: translate(-50%, -50%)") 
-        h1.main-heading WHERE <span>HONESTY</span> IS BEFORE <span>MONEY</span>
-    img( style="width:100%;" src="./assets/png/image-2.png")
+    div.main-carousel
+        div
+            div(style="position: absolute; top: 50%; left: 50%; color: #fff; transform: translate(-50%, -50%)") 
+                h1.main-heading WHERE <span>HONESTY</span> IS BEFORE <span>MONEY</span>
+            picture
+                source(media="(max-width: 576px)" srcset="./assets/png/image-1-mobile.png")
+                img( style="width:100%;" src="./assets/png/image-1.png")
+        div
+            div(style="position: absolute; top: 50%; left: 50%; color: #fff; transform: translate(-50%, -50%)") 
+                h1.main-heading OVER A <span>DECADE</span> OF <span>EXPERIENCE</span>
+            picture
+                source(media="(max-width: 576px)" srcset="./assets/png/image-2-mobile.png")
+                img( style="width:100%;" src="./assets/png/image-2.png")
+        div
+            div(style="position: absolute; top: 50%; left: 50%; color: #fff; transform: translate(-50%, -50%)") 
+                h1.main-heading <span>DOZENS</span> OF <span>REAL REVIEWS</span>
+            picture
+                source(media="(max-width: 576px)",  srcset="./assets/png/image-3-mobile.png")
+                img( style="width:100%;" src="./assets/png/image-3.png")
 div.row
     div.col-lg-6.coupon-box-1.py-5.pl-5
         h1 SAVE $30 ON BRAKES & BRAKE REPAIR
