@@ -1,9 +1,11 @@
 section.special-offers-container.py-5
     a#discounts
     div.img-container
-        img(src="./assets/png/discount-bg.png")
+        picture
+            source(media="(max-width: 576px)" srcset="./assets/png/discount-bg-mobile.png")
+            img( style="width:100%;" src="./assets/png/discount-bg.png")
         div.content.container
-            h2.text-center(style="color:white") GET 15% OFF ENGINE DIAGNOSTIC BY SIGNING IN TO OUR NEWSLETTER
+            h2.text-center(style="color:white") GET 15% OFF ENGINE DIAGNOSTIC
             form.mr-auto.ml-auto.py-4
                 div.row
                     .form-group.col-lg-5

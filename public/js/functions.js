@@ -28,7 +28,7 @@ $(document).ready(function () {
 
     var servicesController = new ScrollMagic.Controller();
     $('.fade-in').each(function () {
-        var tween = TweenMax.from(this , 0.5, {autoAlpha: 0, scale: 0.5, y: '-=130', ease: Linear.easeNone});
+        var tween = TweenMax.from(this , 0.5, {autoAlpha: 0, scale: 0.5, y: '-=50', ease: Linear.easeNone});
 
         var scene = new ScrollMagic.Scene({
             triggerElement: this
