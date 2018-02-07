@@ -49,6 +49,15 @@ $(document).ready(function () {
             $('#navbarToggleExternalContent').removeClass('show');
         })
     })
+
+
+    twttr.widgets.createTimeline(
+        {
+            sourceType: "profile",
+            screenName: "leonardofjr87"
+        },
+        document.getElementById("container")
+    );
 });
 
 //** Helper Functions **/

@@ -22,12 +22,15 @@ html
     header
       div#top
       include inc/header-content.jade
-      include inc/main-image.jade
+      include inc/hero-image.jade
     main.container
       section.content
-        block content
-    include ./inc/pages/discounts
-    include inc/map.jade
+        include ./inc/widgets/player
+        include ./inc/sections/licensing-info
+        include ./inc/widgets/faq
+        include ./inc/widgets/newsletter
+        include ./inc/widgets/twitter-feed
+    include ./inc/sections/parallax.jade
     footer
       include inc/footer-content.jade
     script(src="js/slick-1.8.0/slick.min.js")
