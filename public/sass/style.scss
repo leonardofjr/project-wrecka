@@ -50,7 +50,7 @@ a:hover {
 
 /******* CH02 - Typography *******/
 body {
-font-family: $font-stack;
+font-family: 'Hind', sans-serif;
 color: black;
 }
 
@@ -59,12 +59,16 @@ p {
   padding: 1rem!important
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
 h1 {
-  font-size: 2.50em;
+  font-size: 4em;
+  font-weight: 800;
   padding: 1rem!important;
 }
 h2 {
-  font-size: 2em;
+  font-size: 3em;
   padding: .4rem;
 }
 
@@ -77,6 +81,11 @@ h4 {
   font-size: 1em;
   padding: 1rem 0!important
 }
+
+strong {
+  font-weight: 800;
+}
+
 header {
   .main-heading {
     font-weight: 100;
@@ -91,6 +100,8 @@ body, html {
   overflow-y: scroll;
 overflow-x: hidden;
 }
+
+
 .special-offers-container {
    img {
      width: 100%;
@@ -106,34 +117,12 @@ overflow-x: hidden;
     transform: translate(-50%, -50%);
   }
 }
-body {
-
-}
-header {
-
-}
-
-main {
-
-}
-.map iframe {
-  width: 100%
-}
-footer {
-
-}
-
 
 
 
 
 /******* CH04 - Header & Navigation *******/
-.mobile-navigation {
-  ul {
-background: none;
-  }
-  
-}
+
 nav {
 
    ul {
@@ -141,8 +130,6 @@ nav {
     @include nav-bar-gradient;
     list-style: none;    
   }
-   
-
 }
 /******* CH05 - Content & Media *******/
 /******* CH06 - Footer *******/
@@ -150,20 +137,7 @@ footer {
   background: #333;
   color: #fff;
 }
-footer div:nth-child(1) {
 
-}
-
-footer div:nth-child(1) div:nth-child(1) {
-
-}
-
-footer div:nth-child(1) div:nth-child(1) div:nth-child(1)  {
-
-}
-footer div:nth-child(1) div:nth-child(1) div:nth-child(2)  {
-
-}
 .site-info {
   background: #000;
   color: #888;
@@ -171,98 +145,12 @@ footer div:nth-child(1) div:nth-child(1) div:nth-child(2)  {
 
 
 /******* CH07 - Miscellaneous *******/
-
-.featured-content {
-  img {
-    width: 100%;
-  }
-}
 .btn {
-  border: none;
-  color: white;
-  overflow: hidden;
-  margin: 1rem;
-  padding: 0;
-  text-transform: uppercase;
-  width: 200px;
-  height: 40px;
-
-    
-  &.button-3 {
-    background-color: $btn-color-3;
-  }
-
-  &.button-4 {
-    background-color: $btn-color-4;
-  }
-}
-.services-content img {
-  width: 50px;
-}
-.services-content ul {
-  line-height: 1.7em;
+  color: #000!important;
+  width: 100%!important;
 }
 
-.services-content img {
-    animation: bounce 2s infinite;
-    -webkit-animation: bounce 2s infinite;
-    -moz-animation: bounce 2s infinite;
-    -o-animation: bounce 2s infinite;
-}
 
- 
-@-webkit-keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);} 
-    40% {-webkit-transform: translateY(-30px);}
-    60% {-webkit-transform: translateY(-15px);}
-}
- 
-@-moz-keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
-    40% {-moz-transform: translateY(-30px);}
-    60% {-moz-transform: translateY(-15px);}
-}
- 
-@-o-keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
-    40% {-o-transform: translateY(-30px);}
-    60% {-o-transform: translateY(-15px);}
-}
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
-    40% {transform: translateY(-30px);}
-    60% {transform: translateY(-15px);}
-}
-
-.main-btn {
-    box-shadow: rgb(252, 226, 193) 0px 1px 0px 0px inset;
-    background: linear-gradient(rgb(255, 196, 119) 5%, rgb(250, 215, 37) 100%) rgb(255, 196, 119);
-    border-radius: 6px;
-    border: 1px solid rgb(238, 180, 79);
-    display: inline-block;
-    cursor: pointer;
-    color: rgb(255, 255, 255);
-    font-family: Arial;
-    font-size: 15px;
-    font-weight: bold;
-    padding: 9px 24px;
-    text-decoration: none;
-    text-shadow: rgb(204, 159, 82) 0px 1px 0px;
-    width: 70%;
-}
-form {
-
-}
-
-form input:nth-child(1) {
-
-}
-form input:nth-child(2) {
-
-}
-form textarea  {
-
-}
 
 form {
     button {
@@ -272,18 +160,6 @@ form {
     @include btn-border-line-hover($primary-color);
   }
 } 
-.special-offers-container {
-
-  .coupon-box-1 {
-    background-color: #888;
-    color: white;
-  } 
-
-  .coupon-box-2 {
-    background-color: #aaa;
-    color: white;
-  } 
-}
 
 @import './lg-screens.scss';
 @import './md-screens.scss';
